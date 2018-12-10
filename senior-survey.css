@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font: 1.125em/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* CLASSES */
+
+.topper {
+    position: relative;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.topper::after {
+    background: rgb(183,19,0);
+    background: -moz-linear-gradient(left, rgba(183,19,0,1) 0%, rgba(243,69,0,1) 40%, rgba(243,69,0,1) 60%, rgba(183,19,0,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(183,19,0,1) 0%,rgba(243,69,0,1) 40%,rgba(243,69,0,1) 60%,rgba(183,19,0,1) 100%);
+    background: linear-gradient(to right, rgba(183,19,0,1) 0%,rgba(243,69,0,1) 40%,rgba(243,69,0,1) 60%,rgba(183,19,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b71300', endColorstr='#b71300',GradientType=1 ); 
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.nav-logo {
+    position: relative;
+    width: 25%;
+    max-width: 125px;
+    z-index: 2;
+}
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0, .7);
+    padding: 100px 3em;
+    z-index: 1;
+    display: none;
+}
+
+.main-nav {
+    list-style-type: none;
+}
+
+.nav-links,
+.career-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-nav li {
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #f34500;
+}
+
+.button-light {
+    color: #ffffff;
+    padding: 5px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+}
+
+.button-light:hover {
+    color: #f34500;
+    background-color: #ffffff;
+}
+
+/* DISPLAY NAV LINKS */
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 1100px) {
+    .navbar {
+        display: inline-block;
+        min-height: 110px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0);
+        padding: 20px;
+        z-index: 1;
+    }
+
+    .main-nav {
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 45px;
+    }
+
+    .main-nav li {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .main-nav li a.nav-links {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .contact-link {
+        color: #ffffff;
+        padding: 5px 15px;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        transition: all .2s ease-out;
+    }
+
+    .contact-link:hover {
+        color: #f34500;
+        background-color: #ffffff;
+    }
+
+    button.hamburger, 
+    .career-link {
+        display: none;
+    }
+}
