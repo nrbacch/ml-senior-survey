@@ -14,6 +14,11 @@ body {
     font-weight: 400;
 }
 
+header {
+    background: url(img/mobile-hdr.jpg);
+    background-size: auto auto;
+}
+
 /* CLASSES */
 
 .topper {
@@ -58,7 +63,7 @@ body {
     left: 0;
     width: 100%;
     min-height: 700px;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .9);
     padding: 100px 3em;
     z-index: 1;
     display: none;
@@ -95,6 +100,63 @@ body {
 .button-light:hover {
     color: #f34500;
     background-color: #ffffff;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 500px;
+    padding: 3% 5%;
+}
+
+.header-content p:first-child {
+    font: 3rem/1 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.header-content p {
+    font: 1.125rem/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.main-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.content-aside-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+aside.sticky-social-icons {
+    position: sticky;
+    background: #ffffff;
+}
+
+ul.sticky-social-icons {
+    list-style: none;
+}
+
+ul.sticky-social-icons li {
+    display: inline-block;
+}
+
+img.sticky-social-icons {
+    width: 35px;
+    height: auto;
+    margin: 30px 10px;
+}
+
+.introduction {
+    max-width: 1000px;
+    margin-top: 60px;
 }
 
 /* DISPLAY NAV LINKS */
@@ -149,5 +211,78 @@ body {
     button.hamburger, 
     .career-link {
         display: none;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    header {
+        background: url(img/wide-hdr.jpg);
+        background-size: cover;
+        background-position: 50% 0%;
+    }
+
+    ul.sticky-social-icons li {
+        display: block;
+    }
+
+    .content-aside-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    aside.sticky-social-icons {
+        align-self: flex-start;
+        position: sticky;
+        top: 200px;
+        margin: 30px 0 0 50px;
+        background: #ffffff;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .header-content {
+        width: 100%;
+        max-width: 700px;
+        padding: 3% 5%;
+    }
+    
+    .header-content p:first-child {
+        font: 4rem/1 'Ubuntu', Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom:20px;
+    }
+    
+    .header-content p {
+        font: 1.5rem/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .header-content {
+        width: 100%;
+        max-width: 1000px;
+        padding: 3% 5%;
+    }
+    
+    .header-content p:first-child {
+        font: 6rem/1 'Ubuntu', Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom:20px;
+    }
+    
+    .header-content p {
+        font: 2rem/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 400;
     }
 }
