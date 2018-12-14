@@ -19,8 +19,8 @@ header {
     background-size: cover;
 }
 
-a {
-    text-decoration: none;
+a img {
+    border: none;
 }
 
 /* CLASSES */
