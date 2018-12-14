@@ -149,7 +149,6 @@ ul.sticky-social-icons {
 
 ul.sticky-social-icons li {
     display: inline-block;
-    line-height: 1;
 }
 
 img.sticky-social-icons {
@@ -255,7 +254,6 @@ display: flex;
 
     ul.sticky-social-icons li {
         display: block;
-        line-height: 1;
     }
 
     img.sticky-social-icons {
