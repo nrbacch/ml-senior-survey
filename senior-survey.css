@@ -130,11 +130,7 @@ header {
 }
 
 .content-aside-wrap {
-    display: -webkit-box; 
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex; 
-display: flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -235,11 +231,7 @@ img.sticky-social-icons {
 @media screen and (min-width: 768px) {
 
     .content-aside-wrap {
-        display: -webkit-box; 
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex; 
-display: flex;
+        display: flex;
         flex-direction: row-reverse;
     }
 
