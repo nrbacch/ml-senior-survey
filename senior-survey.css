@@ -16,7 +16,7 @@ body {
 
 header {
     background: url(img/mobile-hdr.jpg);
-    background-size: auto auto;
+    background-size: cover;
 }
 
 /* CLASSES */
@@ -105,7 +105,7 @@ header {
 .header-content {
     width: 100%;
     max-width: 500px;
-    padding: 3% 5%;
+    padding: 4% 5%;
 }
 
 .header-content p:first-child {
@@ -127,7 +127,6 @@ header {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 10px;
 }
 
 .content-aside-wrap {
@@ -151,12 +150,11 @@ ul.sticky-social-icons li {
 img.sticky-social-icons {
     width: 35px;
     height: auto;
-    margin: 30px 10px;
+    margin: 30px 5px;
 }
 
 .introduction {
     max-width: 1000px;
-    margin-top: 60px;
 }
 
 /* DISPLAY NAV LINKS */
@@ -216,12 +214,21 @@ img.sticky-social-icons {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
     header {
-        background: url(img/wide-hdr.jpg);
-        background-size: cover;
-        background-position: 50% 0%;
+        background: url(img/desktop-hdr.jpg);
+        background-position: 20% 50%;
     }
+}
+
+@media screen and (min-width: 730px) {
+    header {
+        background: url(img/desktop-hdr.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
 
     ul.sticky-social-icons li {
         display: block;
@@ -238,6 +245,10 @@ img.sticky-social-icons {
         top: 200px;
         margin: 30px 0 0 50px;
         background: #ffffff;
+    }
+
+    .introduction {
+        margin-top: 60px;
     }
 }
 
