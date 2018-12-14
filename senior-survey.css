@@ -150,7 +150,7 @@ ul.sticky-social-icons li {
 
 img.sticky-social-icons {
     width: 35px;
-    margin: 30px 5px;
+    height: 35px;
 }
 
 .introduction {
@@ -247,12 +247,6 @@ img.sticky-social-icons {
     ul.sticky-social-icons li {
         display: block;
         line-height: 1;
-    }
-
-    img.sticky-social-icons {
-        width: 35px;
-        height: auto;
-        margin: 10px 5px;
     }
 
     .introduction {
