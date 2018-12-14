@@ -130,7 +130,11 @@ header {
 }
 
 .content-aside-wrap {
-    display: flex;
+    display: -webkit-box; 
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex; 
+display: flex;
     flex-direction: column;
 }
 
@@ -145,6 +149,7 @@ ul.sticky-social-icons {
 
 ul.sticky-social-icons li {
     display: inline-block;
+    line-height: 1;
 }
 
 img.sticky-social-icons {
@@ -231,7 +236,11 @@ img.sticky-social-icons {
 @media screen and (min-width: 768px) {
 
     .content-aside-wrap {
-        display: flex;
+        display: -webkit-box; 
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex; 
+display: flex;
         flex-direction: row-reverse;
     }
 
@@ -246,6 +255,7 @@ img.sticky-social-icons {
 
     ul.sticky-social-icons li {
         display: block;
+        line-height: 1;
     }
 
     img.sticky-social-icons {
