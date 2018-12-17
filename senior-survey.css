@@ -129,7 +129,7 @@ a img {
 
 .main-content {
     width: 90%;
-    max-width: 1000px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -232,7 +232,7 @@ img.sticky-social-icons {
     }
 }
 
-@media screen and (min-width: 975px) {
+@media screen and (min-width: 1075px) {
 
     .content-aside-wrap {
         display: flex;
