@@ -157,10 +157,6 @@ img.sticky-social-icons {
     height: 35px;
 }
 
-.introduction {
-    max-width: 980px;
-}
-
 /* DISPLAY NAV LINKS */
 
 .active {
@@ -232,7 +228,7 @@ img.sticky-social-icons {
     }
 }
 
-@media screen and (min-width: 1075px) {
+@media screen and (min-width: 975px) {
 
     .content-aside-wrap {
         display: flex;
@@ -243,7 +239,7 @@ img.sticky-social-icons {
         align-self: flex-start;
         position: sticky;
         top: 200px;
-        margin: 30px 0 0 50px;
+        margin: 30px 0 0 20px;
         background: #ffffff;
     }
 
@@ -254,7 +250,8 @@ img.sticky-social-icons {
     }
 
     .introduction {
-        margin-top: 60px;
+        max-width: 825px;
+        margin: 30px auto 0 auto;
     }
 }
 
