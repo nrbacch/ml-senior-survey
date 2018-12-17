@@ -232,7 +232,7 @@ img.sticky-social-icons {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 975px) {
 
     .content-aside-wrap {
         display: flex;
