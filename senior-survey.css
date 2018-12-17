@@ -238,9 +238,10 @@ img.sticky-social-icons {
     aside.sticky-social-icons {
         align-self: flex-start;
         position: sticky;
+        flex:1;
         top: 200px;
+        max-width: 50px;
         margin: 30px 0 0 20px;
-        background: #ffffff;
     }
 
 
@@ -252,6 +253,7 @@ img.sticky-social-icons {
     .introduction {
         max-width: 825px;
         margin: 30px auto 0 auto;
+        flex:8;
     }
 }
 
