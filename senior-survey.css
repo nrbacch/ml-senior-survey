@@ -144,7 +144,8 @@ ul.item li {
 }
 
 .main-content {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .content-container {
