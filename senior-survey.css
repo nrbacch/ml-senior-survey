@@ -32,6 +32,7 @@ ul.item {
 ul.item li {
     display: inline-block;
     padding: 10px;
+    line-height: 1;
 }
 
 /* CLASSES */
@@ -145,7 +146,7 @@ ul.item li {
 
 .main-wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin: 3.125rem auto;
 }
 
 .content-container {
@@ -160,15 +161,15 @@ ul.item li {
     max-width: 1060px;
     padding: 0;
     margin: 0 auto;
-    border: 1px solid #000000;
 }
 
-.item {
-    background-color: aqua;
+li a img.social {
+    width: 40px;
+    height: 40px;
 }
 
 .item2 {
-    background-color: blueviolet;
+    padding-right: 1.875rem;
 }
 
 /* DISPLAY NAV LINKS */
@@ -244,6 +245,12 @@ ul.item li {
 
 @media screen and (min-width: 768px) {
 
+    ul.item {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+    }
+
     ul.item li {
         display: block;
     }
@@ -256,6 +263,9 @@ ul.item li {
         -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
                 flex-direction: row-reverse;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
     }  
 }
 
