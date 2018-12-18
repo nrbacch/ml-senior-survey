@@ -14,6 +14,34 @@ body {
     font-weight: 400;
 }
 
+h2 {
+    font: 2.625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h4 {
+    font: 2.1875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 2.5rem;
+}
+
+p {
+    font: 1.125em/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1.25rem;
+}
+
+em {
+    font-style: normal;
+    color: #f34500;
+}
+
 header {
     background: url(img/mobile-hdr.jpg);
     background-size: cover;
@@ -170,6 +198,12 @@ li a img.social {
 
 .item2 {
     padding-right: 1.875rem;
+}
+
+.item2 h2 {
+    font-weight: 700;
+    padding: 1.25rem 0 4.0625rem 0;
+    border-bottom: 5px solid #f34500;
 }
 
 /* DISPLAY NAV LINKS */
