@@ -21,7 +21,11 @@ h2 {
     font-weight: 400;
 }
 
-h4 {
+h4,
+li.item-3 em,
+li.item-4 em,
+li.item-5 em,
+li.item-6 em {
     font: 2.1875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
@@ -29,12 +33,15 @@ h4 {
     margin-top: 2.5rem;
 }
 
-p {
+p,
+li.item-3,
+li.item-4,
+li.item-5,
+li.item-6 {
     font: 1.125em/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
     font-weight: 400;
-    margin-top: 1.25rem;
 }
 
 em {
@@ -51,17 +58,44 @@ a img {
     border: none;
 }
 
-ul.item {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-ul.item li {
+ul.flex-social-sidebar li {
     display: inline-block;
-    padding: 10px;
+    padding: 8px;
     line-height: 1;
 }
+
+li a img.social {
+    width: 40px;
+    height: 40px;
+}
+
+ul.flex-pie-chart-legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+ul.flex-pie-chart-legend li {
+     display: block;
+ }
+
+ li.item-1 svg {
+     width: 100%;
+     height: 100%;
+     max-width: 600px;
+     display: block;
+     margin: auto;
+ }
 
 /* CLASSES */
 
@@ -167,11 +201,6 @@ ul.item li {
     font-weight: 400;
 }
 
-ul.item li {
-    display: inline-block;
-    padding: 10px;
-}
-
 .main-wrapper {
     width: 90%;
     margin: 3.125rem auto;
@@ -191,19 +220,18 @@ ul.item li {
     margin: 0 auto;
 }
 
-li a img.social {
-    width: 40px;
-    height: 40px;
-}
-
-.item2 {
+.flex-content {
     padding-right: 1.875rem;
 }
 
-.item2 h2 {
+.flex-content h2 {
     font-weight: 700;
     padding: 1.25rem 0 4.0625rem 0;
     border-bottom: 5px solid #f34500;
+}
+
+.pie-chart-container {
+    margin-top: 40px;
 }
 
 /* DISPLAY NAV LINKS */
@@ -270,6 +298,34 @@ li a img.social {
     }
 }
 
+@media screen and (min-width: 600px) {
+    ul.flex-pie-chart-legend {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+                justify-content: space-around;
+    }
+
+    li.item-1 {
+        width: 100%;
+    }
+
+    li.item-2,
+    li.item-3,
+    li.item-4,
+    li.item-5,
+    li.item-6 {
+        width: 15%;
+    }
+}
+
 @media screen and (min-width: 730px) {
     header {
         background: url(img/desktop-hdr.jpg);
@@ -279,13 +335,13 @@ li a img.social {
 
 @media screen and (min-width: 768px) {
 
-    ul.item {
+    ul.flex-social-sidebar {
         position: -webkit-sticky;
         position: sticky;
         top: 20px;
     }
 
-    ul.item li {
+    ul.flex-social-sidebar li {
         display: block;
     }
 
