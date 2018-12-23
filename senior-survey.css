@@ -229,7 +229,8 @@ li.pie-item-6 {
     -webkit-box-direction: normal;
     -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-        margin: 0 auto;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .flex-content {
