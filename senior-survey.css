@@ -77,12 +77,14 @@ ul.flex-pie-chart-legend {
             flex-flow: column nowrap;
 }
 
-li.pie-item-1 svg {
+li.pie-item-1 {
      width: 100%;
-     height: 100%;
      max-width: 600px;
      display: block;
-     margin: auto;
+}
+
+li.pie-item-1 img {
+    width: 100%;
 }
 
 li.pie-item-2 em,
