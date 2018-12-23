@@ -217,6 +217,7 @@ li.pie-item-6 {
 
 .main-wrapper {
     width: 90%;
+    max-width: 66.25rem;
     margin: 3.125rem auto;
 }
 
@@ -229,8 +230,7 @@ li.pie-item-6 {
     -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    max-width: 1060px;
-    padding: 0;
+    max-width: 66.25rem;
     margin: 0 auto;
 }
 
