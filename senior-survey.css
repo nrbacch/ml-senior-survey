@@ -235,6 +235,11 @@ li.pie-item-6 {
 
 .flex-content {
     padding-right: 1.875rem;
+    flex: 11;
+}
+
+.flex-social-sidebar {
+    flex: 1;
 }
 
 .flex-content h2 {
