@@ -235,6 +235,8 @@ li.pie-item-6 {
 
 .flex-content {
     padding-right: 1.875rem;
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
     flex: auto;
 }
 
