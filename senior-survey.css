@@ -284,6 +284,7 @@ ul.flex-social-sidebar,
     font-weight: 700;
     display: block;
     padding: 1rem 0 1rem 1rem;
+    text-align: left;
 }
 
 .bar-item-1,
@@ -480,6 +481,78 @@ ul.flex-social-sidebar,
     header {
         background: url(img/desktop-hdr.jpg);
         background-size: cover;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .flex-bar-chart-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        border-left: none;
+        border-bottom: solid #f34500 5px;
+    }
+
+    .bar-item-1,
+    .bar-item-2,
+    .bar-item-3,
+    .bar-item-4,
+    .bar-item-5 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+                flex-flow: column-reverse;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+                justify-content: space-between;
+        border-bottom: none;
+        border-right: solid #c8c8c8 1px;
+        padding-top: 0;
+        width: 20%;
+    }
+
+    .bar-item-5 {
+        border-right: none;
+    }
+
+    .bar-item-1-shape,
+    .bar-item-2-shape,
+    .bar-item-3-shape,
+    .bar-item-4-shape,
+    .bar-item-5-shape {
+        width: 2rem;
+    }
+
+    .bar-item-1-shape {
+        height: 15.3125rem;
+    }
+    
+    .bar-item-2-shape {
+        height: 13.25rem;
+    }
+    
+    .bar-item-3-shape {
+        height: 7.375rem;
+    }
+    
+    .bar-item-4-shape {
+        height: 6.5625rem;
+    }
+    
+    .bar-item-5-shape {
+        height: 4.6875rem;
+    }
+
+    .flex-bar-chart-container p {
+        font: .75rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        padding: 0;
+        text-align: center;
     }
 }
 
