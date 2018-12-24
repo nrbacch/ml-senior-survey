@@ -402,7 +402,7 @@ ul.flex-social-sidebar,
         background: url(img/desktop-hdr.jpg);
         background-position: 20% 50%;
     }
-/* 
+
     ul.flex-pie-chart-legend {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -438,9 +438,9 @@ ul.flex-social-sidebar,
         font-style: normal;
         font-weight: 300;
     }
-} */
+}
 
-/* @media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {
     
     li.pie-item-3,
     li.pie-item-4,
@@ -474,7 +474,7 @@ ul.flex-social-sidebar,
         width: 25%;
         margin: -3rem 0 0 31rem;
     }
-} */
+}
 
 @media screen and (min-width: 730px) {
     header {
