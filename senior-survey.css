@@ -268,9 +268,10 @@ li.pie-item-1 img {
             flex-flow: column nowrap;
 }
 
+
 .tv-item-1,
 .tv-item-2 {
-    flex: 1;
+    flex: auto;
     padding: 0 2rem;
 }
 
@@ -687,6 +688,11 @@ li.pie-item-1 img {
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
 
+    }
+
+    .tv-item-1,
+    .tv-item-2 {
+        flex: 1;
     }
 }
 
