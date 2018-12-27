@@ -106,7 +106,14 @@ li.pie-item-1 {
 }
 
 li.pie-item-1 img {
-    width: 100%;
+    width: 449px;
+    height: 449px;
+}
+
+@supports (display: flex) {
+    li.pie-item-1 img {
+        width: 100%;
+    }
 }
 
 .pie-item-2 em,
