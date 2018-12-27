@@ -1,3 +1,7 @@
+/*------------------------------------*\
+  #BASE-STYLES
+\*------------------------------------*/
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -15,15 +19,11 @@ body {
     font-weight: 400;
 }
 
-
-h1.content-title {
+h1 {
     font: 2.625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #ffffff;
+    color: #4f4f4f;
     font-style: normal;
-    font-weight: 200;
-    background-color: #f34500;
-    width: 100%;
-    text-align: center;
+    font-weight: 400;
 }
 
 h2 {
@@ -80,18 +80,16 @@ ul {
     margin: 0;
 }
 
-ul.flex-social-sidebar li {
-    display: inline-block;
-    padding: 8px;
-    line-height: 1;
-}
+/*------------------------------------*\
+  #MAKE LESS SPECIFIC
+\*------------------------------------*/
 
 li a img.social {
     width: 40px;
     height: 40px;
 }
 
-ul.flex-pie-chart-legend {
+.flex-pie-chart-legend {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -111,11 +109,11 @@ li.pie-item-1 img {
     width: 100%;
 }
 
-li.pie-item-2 em,
-li.pie-item-3 em,
-li.pie-item-4 em,
-li.pie-item-5 em,
-li.pie-item-6 em {
+.pie-item-2 em,
+.pie-item-3 em,
+.pie-item-4 em,
+.pie-item-5 em,
+.pie-item-6 em {
     font: 2.1875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
@@ -123,11 +121,11 @@ li.pie-item-6 em {
     padding-right: .5rem;
 }
 
-li.pie-item-2,
-li.pie-item-3,
-li.pie-item-4,
-li.pie-item-5,
-li.pie-item-6 {
+.pie-item-2,
+.pie-item-3,
+.pie-item-4,
+.pie-item-5,
+.pie-item-6 {
     font: 1.125em/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
@@ -135,13 +133,9 @@ li.pie-item-6 {
     padding-top: 1rem;
 }
 
-/* CLASSES */
-
-.topper {
-    position: relative;
-    padding: 15px;
-    z-index: 1000;
-}
+/*------------------------------------*\
+  #PSEUDO-CLASSES
+\*------------------------------------*/
 
 .topper::after {
     background: rgb(183,19,0);
@@ -157,6 +151,18 @@ li.pie-item-6 {
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+/*------------------------------------*\
+  #LAYOUT-STYLES
+\*------------------------------------*/
+
+/* ---- Navigation ---- */
+
+.topper {
+    position: relative;
+    padding: 15px;
+    z-index: 1000;
 }
 
 .nav-logo {
@@ -185,8 +191,13 @@ li.pie-item-6 {
     display: none;
 }
 
-.main-nav {
+.nav-links {
     list-style-type: none;
+    text-transform: uppercase;
+}
+
+.nav-links-items {
+    padding: 30px 0;
 }
 
 .nav-links,
@@ -195,48 +206,17 @@ li.pie-item-6 {
     color: #ffffff;
 }
 
-.main-nav li {
-    text-transform: uppercase;
-    margin: 30px auto;
-}
-
 .contact-link {
     text-decoration: none;
     color: #f34500;
 }
 
-.button-light {
-    color: #ffffff;
-    padding: 5px 15px;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    transition: all .2s ease-out;
-}
-
-.button-light:hover {
-    color: #f34500;
-    background-color: #ffffff;
-}
+/* ---- Layout Containers ---- */
 
 .header-content {
     width: 100%;
     max-width: 500px;
     padding: 4% 5%;
-}
-
-.header-content p:first-child {
-    font: 3rem/1 'Ubuntu', Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom:20px;
-}
-
-.header-content p {
-    font: 1.125rem/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 400;
 }
 
 .main-wrapper {
@@ -256,15 +236,9 @@ li.pie-item-6 {
     width: 100%;
 }
 
-ul.flex-social-sidebar,
+.flex-social-sidebar,
 .flex-content {
     width: 100%;
-}
-
-.flex-content h2 {
-    font-weight: 700;
-    padding: 1.25rem 0 4.0625rem 0;
-    border-bottom: 5px solid #f34500;
 }
 
 .pie-chart-container,
@@ -282,6 +256,73 @@ ul.flex-social-sidebar,
     -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
     border-left: solid #f34500 5px;
+}
+
+/* ---- Page Elements ---- */
+
+.button-light {
+    color: #ffffff;
+    padding: 5px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    transition: all .2s ease-out;
+}
+
+.button-light:hover {
+    color: #f34500;
+    background-color: #ffffff;
+}
+
+.header-content p:first-child {
+    font: 3rem/1 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.header-content p {
+    font: 1.125rem/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content-title {
+    font: 2.625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 200;
+    background-color: #f34500;
+    width: 100%;
+    text-align: center;
+}
+
+.flex-social-sidebar-items {
+    display: inline-block;
+    padding: 8px;
+    line-height: 1;
+}
+
+.header-content p:first-child {
+    font: 3rem/1 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+
+.header-content p {
+    font: 1.125rem/1.4 'Ubuntu', Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.flex-content h2 {
+    font-weight: 700;
+    padding: 1.25rem 0 4.0625rem 0;
+    border-bottom: 5px solid #f34500;
 }
 
 .bar-item-1 em,
@@ -381,13 +422,22 @@ ul.flex-social-sidebar,
     display: block;
 }
 
-/* DISPLAY NAV LINKS */
+/*------------------------------------*\
+  #DISPLAY-NAV-LINKS
+\*------------------------------------*/
 
 .active {
     display: block;
 }
 
+/*------------------------------------*\
+  #MEDIA-QUERIES
+\*------------------------------------*/
+
+/* ---- Navigation ---- */
+
 @media screen and (min-width: 1100px) {
+
     .navbar {
         display: inline-block;
         min-height: 110px;
@@ -412,9 +462,12 @@ ul.flex-social-sidebar,
         display: inline-block;
     }
 
-    .main-nav li a.nav-links {
-        margin: 0;
+    .nav-links-items {
         padding: 0 20px;
+    }
+
+   .nav-links {
+        margin: 0;
     }
 
     .contact-link {
@@ -436,7 +489,7 @@ ul.flex-social-sidebar,
     }
 }
 
-/* MEDIA QUERIES */
+/* ---- Everything Else ---- */
 
 @media screen and (min-width: 500px) {
     header {
@@ -444,36 +497,36 @@ ul.flex-social-sidebar,
         background-position: 20% 50%;
     }
 
-    ul.flex-pie-chart-legend {
+    .flex-pie-chart-legend {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-flow: row wrap;
                 flex-flow: row wrap;
     }
 
-    li.pie-item-2 {
+    .pie-item-2 {
         width: 100%;
         margin: -10rem auto 0 8rem;
         color: #ffffff;
     }
 
-    li.pie-item-3,
-    li.pie-item-4,
-    li.pie-item-5,
-    li.pie-item-6 {
+    .pie-item-3,
+    .pie-item-4,
+    .pie-item-5,
+    .pie-item-6 {
         width: 50%;
         padding-left: 5rem;
     }
 
-    li.pie-item-2 em,
-    li.pie-item-3 em,
-    li.pie-item-4 em,
-    li.pie-item-5 em,
-    li.pie-item-6 em {
+    .pie-item-2 em,
+    .pie-item-3 em,
+    .pie-item-4 em,
+    .pie-item-5 em,
+    .pie-item-6 em {
         display: block;
     }
 
-    li.pie-item-2 em {
+    .pie-item-2 em {
         font: 2.1875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #ffffff;
         font-style: normal;
@@ -483,35 +536,35 @@ ul.flex-social-sidebar,
 
 @media screen and (min-width: 700px) {
     
-    li.pie-item-3,
-    li.pie-item-4,
-    li.pie-item-5,
-    li.pie-item-6 {
+    .pie-item-3,
+    .pie-item-4,
+    .pie-item-5,
+    .pie-item-6 {
         padding-left: 0;
     }
     
-    li.pie-item-2 {
+    .pie-item-2 {
         width: 100%;
         margin: -12rem auto 0 10rem;
         color: #ffffff;
     }
 
-    li.pie-item-3 {
+    .pie-item-3 {
         width: 25%;
         margin: -12rem 0 0 36rem;
     }
 
-    li.pie-item-4 {
+    .pie-item-4 {
         width: 25%;
         margin: -1rem 0 0 20rem;
     }
 
-    li.pie-item-5 {
+    .pie-item-5 {
         width: 25%;
         margin: -10rem 0 0 32rem;
     }
 
-    li.pie-item-6 {
+    .pie-item-6 {
         width: 25%;
         margin: -3rem 0 0 31rem;
     }
@@ -613,14 +666,14 @@ ul.flex-social-sidebar,
     }
 
 
-    ul.flex-social-sidebar {
+    .flex-social-sidebar {
         position: -webkit-sticky;
         position: sticky;
         top: 20px;
         width: 3.5rem;
     }
 
-    ul.flex-social-sidebar li {
+    .flex-social-sidebar-items {
         display: block;
     }
 
@@ -656,7 +709,7 @@ ul.flex-social-sidebar,
         font-weight: 400;
     }
 
-    ul.flex-pie-chart-legend {
+    .flex-pie-chart-legend {
         margin-left: 8rem;
     }
 
