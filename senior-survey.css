@@ -268,6 +268,12 @@ li.pie-item-1 img {
             flex-flow: column nowrap;
 }
 
+.tv-item-1,
+.tv-item-2 {
+    flex: 1;
+    padding: 0 2rem;
+}
+
 /* ---- Page Elements ---- */
 
 .button-light {
@@ -426,6 +432,26 @@ li.pie-item-1 img {
     font: 3.75rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 0;
     display: block;
+}
+
+.tv-item-1 h4,
+.tv-item-2 h4 {
+    padding-left: 3.125rem;
+    margin: 2rem auto 1rem;
+}
+
+.tv-item-1 h4 {
+    width: 17rem;
+    background: left / contain no-repeat url("img/ent-thermometer.svg");
+}
+
+.tv-item-2 h4 {
+    width: 10rem;
+    background: left / contain no-repeat url("img/news-thermometer.svg");
+}
+
+.tv-item-container p {
+    text-align: center;
 }
 
 /*------------------------------------*\
