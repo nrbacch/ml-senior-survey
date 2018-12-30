@@ -250,12 +250,14 @@ li.pie-item-1 img {
 }
 
 .pie-chart-container,
-.flex-bar-chart-container {
+.flex-bar-chart-container,
+.flex-social-chart-container {
     margin-top: 40px;
     max-width: 59.375rem;
 }
 
-.flex-bar-chart-container {
+.flex-bar-chart-container,
+.flex-social-chart-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -263,6 +265,9 @@ li.pie-item-1 img {
     -webkit-box-direction: normal;
     -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
+}
+
+.flex-bar-chart-container {
     border-left: solid #f34500 5px;
 }
 
@@ -365,16 +370,34 @@ li.pie-item-1 img {
     padding-left: 4%;
 }
 
+.social-item-1 em,
+.social-item-2 em,
+.social-item-3 em,
+.social-item-4 em,
+.social-item-5 em {
+    font: 1.875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #f34500;
+    font-style: normal;
+    font-weight: 100;
+    margin-left: auto;
+    padding: 0;
+}
+
 .bar-item-3 em,
 .bar-item-4 em,
-.bar-item-5 em {
+.bar-item-5 em,
+.social-item-2 em,
+.social-item-3 em,
+.social-item-4 em,
+.social-item-5 em {
     color: #4f4f4f;
 }
 
-.flex-bar-chart-container p {
-    width: 100%;
+.flex-bar-chart-container p,
+.flex-social-chart-container p {
+    font: .75rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
-    display: block;
+    width: 100%;
     padding: 1rem 0 1rem 1rem;
     text-align: left;
 }
@@ -383,7 +406,12 @@ li.pie-item-1 img {
 .bar-item-2,
 .bar-item-3,
 .bar-item-4,
-.bar-item-5 {
+.bar-item-5,
+.social-item-1,
+.social-item-2,
+.social-item-3,
+.social-item-4,
+.social-item-5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -494,9 +522,41 @@ img.trend-img {
 
 img.connect-img {
     width: 20%;
+    max-width: 80px;
     height: auto;
     margin: 0 40%;
 }
+
+img.facebook-chrt {
+    width: 99px;
+    height: 99px;
+    margin-left: 1rem;
+}
+
+img.twitter-chrt {
+    width: 56px;
+    height: 45px;
+    margin-left: 1rem;
+}
+
+img.instagram-chrt {
+    width: 34px;
+    height: 34px;
+    margin-left: 1rem;
+}
+
+img.pinterest-chrt {
+    width: 30px;
+    height: 37px;
+    margin-left: 1rem;
+}
+
+img.snapchat-chrt {
+    width: 20px;
+    height: 19px;
+    margin-left: 1rem;
+}
+
 
 /*------------------------------------*\
   #DISPLAYS-NAV-LINKS
@@ -666,12 +726,16 @@ img.connect-img {
 
 @media screen and (min-width: 768px) {
     
-    .flex-bar-chart-container {
+    .flex-bar-chart-container,
+    .flex-social-chart-container {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
         flex-flow: row nowrap;
         border-left: none;
+    }
+
+    .flex-bar-chart-container {
         border-bottom: solid #f34500 5px;
     }
 
@@ -679,7 +743,12 @@ img.connect-img {
     .bar-item-2,
     .bar-item-3,
     .bar-item-4,
-    .bar-item-5 {
+    .bar-item-5,
+    .social-item-1,
+    .social-item-2,
+    .social-item-3,
+    .social-item-4,
+    .social-item-5 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -696,7 +765,8 @@ img.connect-img {
         width: 20%;
     }
 
-    .bar-item-5 {
+    .bar-item-5,
+    .social-item-5 {
         border-right: none;
     }
 
@@ -728,10 +798,30 @@ img.connect-img {
         height: 4.6875rem;
     }
 
-    .flex-bar-chart-container p {
-        font: .75rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 700;
-        padding: 0;
+    .social-item-1 em,
+    .social-item-2 em,
+    .social-item-3 em,
+    .social-item-4 em,
+    .social-item-5 em,
+    img.facebook-chrt, 
+    img.twitter-chrt,
+    img.instagram-chrt, 
+    img.pinterest-chrt, 
+    img.snapchat-chrt {
+        margin-left: 0;
+    }
+
+    .social-item-1 em,
+    .social-item-2 em,
+    .social-item-3 em,
+    .social-item-4 em,
+    .social-item-5 em {
+        padding-bottom: 1rem;
+    }
+
+    .flex-bar-chart-container p,
+    .flex-social-chart-container p {
+        padding: 0 0 1rem 0;
         text-align: center;
         margin-bottom: auto;
     }

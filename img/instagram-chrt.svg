@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <title>instagram-chrt</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="facebook">
+      <g id="instagram-off-2">
+        <path id="Path_200" data-name="Path 200" d="M24.37,1H11.63A10.63,10.63,0,0,0,1,11.63V24.37A10.63,10.63,0,0,0,11.63,35H24.37A10.63,10.63,0,0,0,35,24.37V11.63A10.63,10.63,0,0,0,24.37,1Zm7.45,23.37a7.47,7.47,0,0,1-7.45,7.45H11.63a7.47,7.47,0,0,1-7.45-7.45V11.63a7.45,7.45,0,0,1,7.45-7.44H24.37a7.45,7.45,0,0,1,7.45,7.44Z" style="fill: #999"/>
+        <path id="Path_201" data-name="Path 201" d="M18,9.5A8.5,8.5,0,1,0,26.5,18,8.5,8.5,0,0,0,18,9.5Zm0,13.82A5.32,5.32,0,1,1,23.31,18,5.32,5.32,0,0,1,18,23.32Z" style="fill: #999"/>
+        <circle id="Ellipse_19" data-name="Ellipse 19" cx="27.14" cy="8.87" r="1.13" style="fill: #999"/>
+      </g>
+      <rect width="36" height="36" style="fill: none"/>
+    </g>
+  </g>
+</svg>
