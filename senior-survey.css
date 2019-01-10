@@ -95,7 +95,8 @@ h2 {
     font-weight: 400;
 }
 
-h3 {
+h3,
+.social-stats-item-2 {
     font: 2.1875rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #919191;
     font-style: italic;
@@ -111,7 +112,8 @@ h4 {
     margin: 2.5rem 0;
 }
 
-p {
+p,
+.social-stats-item-3 {
     font: 1.125rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
@@ -295,7 +297,6 @@ em.italic {
     display: block;
 }
 
-h3.data-numbers-secondary,
 h3.thermometer-entertainment,
 h3.thermometer-news {
     color: #4f4f4f;
@@ -308,7 +309,6 @@ h3.thermometer-news {
 .tv-stats-flex {
     display: flex;
     flex-flow: row wrap;
-    padding: 0 35px;
     justify-content: center;
 }
 
@@ -323,16 +323,53 @@ h3.thermometer-news {
 h3.thermometer-entertainment,
 h3.thermometer-news {
     background: left / contain no-repeat url(img/tv-entertaiment.svg);
+    width: 270px;
     margin: 1.5rem auto .75rem auto;
     padding-left: 60px;
 }
 
 h3.thermometer-news {
     background: left / contain no-repeat url(img/tv-news.svg);
+    width: 181px;
 }
 
 
 /* ---- Social Media ---- */
+
+.social-stats-flex {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+.social-stats-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 0 5%;
+    margin-bottom: 40px;
+    border-bottom: solid 1px #919191;
+}
+
+.social-stats-item-1 {
+    width: 50%;
+}
+
+.social-stats-item-2 {
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 200;
+    align-self: center;
+    margin: 0 0 0 auto;
+}
+
+.social-stats-item-3 {
+    width: 100%;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: left;
+}
 
 
 /* ---- Radio & Podcast ---- */
@@ -541,10 +578,80 @@ h3.thermometer-news {
         font-weight: 300;
         display: block;
     }
+
+    h3.thermometer-news {
+        width: 264px;
+    }
 }
 
 /* ---- Social Media ---- */
 
+
+@media screen and (min-width: 500px) {
+    .social-stats-item-2 em {
+        font: 4.625rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        margin: 0 0 2rem auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .social-stats-flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .social-stats-container {
+        display: flex;
+        flex-flow: column-reverse nowrap;
+        align-content: space-between;
+        width: 20%;
+        padding: 0 5%;
+        margin-bottom: 0px;
+        border-bottom: 0;
+        border-right: solid 1px #919191;
+    }
+
+    .social-stats-container:first-of-type {
+        padding-left: 0;
+    }
+
+    .social-stats-container:last-of-type {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .social-stats-item-1,
+    .social-stats-item-2,
+    .social-stats-item-3 {
+        width: 100%;
+        align-self: center;
+        text-align: center;
+    }
+
+    .social-stats-item-2 {
+        margin: 1.5rem 0;
+    }
+
+    .social-stats-item-2 em {
+        font: 2.1875rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        margin: 0 0 2rem auto;
+    }
+
+    .social-stats-item-3 {
+        margin: 0 0 auto 0;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .social-stats-item-2 em {
+        font: 4.625rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        margin: 0 0 2rem auto;
+    }
+}
 
 /* ---- Radio & Podcast ---- */
 
