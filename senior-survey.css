@@ -112,7 +112,7 @@ h4 {
 }
 
 p {
-    font: 1.125em/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 1.125rem/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
     font-weight: 400;
@@ -196,7 +196,7 @@ a {
 
 .intro,
 section {
-    margin: 35px 0;
+    margin: 35px 0 100px 0;
 }
 
 /*------------------------------------*\
@@ -289,7 +289,47 @@ em.italic {
     margin: 0 auto;
 }
 
+.data-numbers em {
+    font: 3.75rem/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    display: block;
+}
+
+h3.data-numbers-secondary,
+h3.thermometer-entertainment,
+h3.thermometer-news {
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 300;
+}
+
 /* ---- TV ---- */
+
+.tv-stats-flex {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 35px;
+    justify-content: center;
+}
+
+.tv-stats-item {
+    width: 100%;
+}
+
+.tv-stats-item p {
+    text-align: center;
+}
+
+h3.thermometer-entertainment,
+h3.thermometer-news {
+    background: left / contain no-repeat url(img/tv-entertaiment.svg);
+    margin: 1.5rem auto .75rem auto;
+    padding-left: 60px;
+}
+
+h3.thermometer-news {
+    background: left / contain no-repeat url(img/tv-news.svg);
+}
 
 
 /* ---- Social Media ---- */
@@ -482,6 +522,26 @@ em.italic {
 
 /* ---- TV ---- */
 
+@media screen and (min-width: 650px) {
+    .tv-stats-flex {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 35px;
+        justify-content: space-between;
+    }
+    
+    .tv-stats-item {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .data-numbers em {
+        font: 6.375rem/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        display: block;
+    }
+}
 
 /* ---- Social Media ---- */
 
