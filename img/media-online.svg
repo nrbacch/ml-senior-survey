@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="183" viewBox="0 0 214 183">
+  <title>media-online</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="newspaper">
+        <path id="Path_224" data-name="Path 224" d="M8.61,129.66V5a4.09,4.09,0,0,1,4-4H201.4a4.09,4.09,0,0,1,4,4V129.66Z"/>
+        <g id="Group_41" data-name="Group 41">
+          <path id="Path_225" data-name="Path 225" d="M205.39,129.71v16a4.09,4.09,0,0,1-4,4H12.6a4.09,4.09,0,0,1-4-4v-16Z" style="fill: #dbdbdb"/>
+          <rect id="Rectangle_129" data-name="Rectangle 129" x="64.95" y="178.01" width="84.24" height="3.99" style="fill: #dbdbdb"/>
+        </g>
+        <path id="Path_226" data-name="Path 226" d="M135,178.09H79l4-28.34h48Z" style="fill: #bababa"/>
+        <rect id="Rectangle_130" data-name="Rectangle 130" x="16.58" y="8.98" width="180.84" height="112.7" style="fill: #fff"/>
+        <path id="Path_227" data-name="Path 227" d="M131,149.75H83l-2.26,15.84,50.89-10.78Z" style="fill: #999"/>
+        <path id="Path_231" data-name="Path 231" d="M154,112.5H62.29V20.69H154" style="fill: #e2e2e2"/>
+        <rect id="Rectangle_134" data-name="Rectangle 134" x="59.9" y="18.3" width="91.68" height="91.81" style="fill: #fff"/>
+        <path id="Path_232" data-name="Path 232" d="M152.24,110.77H59.1V17.5h93.14Zm-91.68-1.46h90.22V19H60.56Z" style="fill: #9e9e9e"/>
+        <g id="Group_43" data-name="Group 43" style="opacity: 0.5">
+          <rect id="Rectangle_135" data-name="Rectangle 135" x="103.97" y="54.98" width="37.07" height="2.26" style="fill: #9e9e9e"/>
+        </g>
+        <g id="Group_44" data-name="Group 44" style="opacity: 0.5">
+          <rect id="Rectangle_136" data-name="Rectangle 136" x="103.97" y="63.57" width="37.07" height="2.26" style="fill: #9e9e9e"/>
+        </g>
+        <g id="Group_45" data-name="Group 45" style="opacity: 0.5">
+          <rect id="Rectangle_137" data-name="Rectangle 137" x="103.97" y="80.77" width="37.07" height="2.26" style="fill: #9e9e9e"/>
+        </g>
+        <g id="Group_46" data-name="Group 46" style="opacity: 0.5">
+          <rect id="Rectangle_138" data-name="Rectangle 138" x="103.97" y="72.17" width="37.07" height="2.26" style="fill: #9e9e9e"/>
+        </g>
+        <g id="Group_47" data-name="Group 47" style="opacity: 0.5">
+          <rect id="Rectangle_139" data-name="Rectangle 139" x="70.26" y="97.96" width="70.82" height="2.26" style="fill: #9e9e9e"/>
+        </g>
+        <g id="Group_48" data-name="Group 48" style="opacity: 0.5">
+          <rect id="Rectangle_140" data-name="Rectangle 140" x="70.26" y="89.37" width="70.82" height="2.26" style="fill: #9e9e9e"/>
+        </g>
+        <rect id="Rectangle_141" data-name="Rectangle 141" x="70.26" y="55.68" width="25.51" height="26.74" style="fill: #333"/>
+        <g id="Group_49" data-name="Group 49">
+          <rect id="Rectangle_142" data-name="Rectangle 142" x="83.02" y="68.96" width="12.76" height="13.31" style="fill: #f39c79"/>
+          <rect id="Rectangle_143" data-name="Rectangle 143" x="70.26" y="55.65" width="12.76" height="13.31" style="fill: #f39c79"/>
+        </g>
+        <g id="Group_50" data-name="Group 50">
+          <path id="Path_233" data-name="Path 233" d="M71.09,45.35V27.92h4.66l3.58,6.39a57.24,57.24,0,0,1,2.79,6h.14a64,64,0,0,1-.4-7.18V27.92h3.58V45.35H81.33L77.61,38.7c-1.07-2-2.13-4-3.06-6.12h-.13c.13,2.26.13,4.79.13,7.58v5.19Z" style="fill: #f34500"/>
+          <path id="Path_234" data-name="Path 234" d="M100.46,38H94.08v4.13h7.18v3.19H90.1V27.92h10.76v3.19H94.08V34.7h6.38Z" style="fill: #f34500"/>
+          <path id="Path_235" data-name="Path 235" d="M108,45.35l-4.12-17.43h4.26l1.32,7.18c.4,2.13.8,4.26,1.07,6.12h0a60.64,60.64,0,0,1,1.19-6.12l1.46-7.18h4.12l1.46,7.32c.4,2,.67,3.86.93,5.85h0c.27-2,.67-4,1.07-6.12l1.46-7.18h4l-4.65,17.56h-4.26l-1.46-7.45a35,35,0,0,1-.8-5.32h0A31.11,31.11,0,0,1,114,37.9l-1.59,7.45Z" style="fill: #f34500"/>
+          <path id="Path_236" data-name="Path 236" d="M129.29,41.36a9.77,9.77,0,0,0,4.39,1.06c1.86,0,2.79-.8,2.79-1.86s-.8-1.73-2.93-2.4c-2.92-1.06-4.78-2.66-4.78-5.18,0-2.93,2.52-5.19,6.64-5.19a9.93,9.93,0,0,1,4.39.93l-.93,3.06a8.81,8.81,0,0,0-3.59-.8c-1.73,0-2.52.8-2.52,1.73s.93,1.6,3.18,2.39c3.06,1.2,4.52,2.8,4.52,5.19,0,2.93-2.26,5.46-7,5.46a12,12,0,0,1-4.92-1.07Z" style="fill: #f34500"/>
+        </g>
+      </g>
+      <rect width="214" height="183" style="fill: none"/>
+    </g>
+  </g>
+</svg>
