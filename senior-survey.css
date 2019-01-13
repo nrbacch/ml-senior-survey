@@ -127,7 +127,7 @@ em {
 }
 
 .source {
-    font: 0.9375rem/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 0.625rem/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #4f4f4f;
     font-style: normal;
     font-weight: 400;
@@ -141,6 +141,10 @@ em {
 
 a {
     color: #f34500;
+}
+
+a.grey-link {
+    color: #4f4f4f;
 }
 
 /*------------------------------------*\
@@ -477,6 +481,20 @@ h3.thermometer-news {
     padding: 0 0 20px 0;
 }
 
+.gender-table-flex:first-of-type,
+.gender-table-flex:last-of-type {
+    padding: 0;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.gender-table-flex:last-of-type {
+    border-bottom: solid 5px #f34500;
+}
+
+.gender-col-flex-title,
 .gender-col-flex-left,
 .gender-col-flex-right {
     display: flex;
@@ -491,6 +509,19 @@ h3.thermometer-news {
     background: #949494;
 }
 
+.gender-col-flex-title {
+    background: #ffffff;   
+}
+
+.gender-table-title-img {
+    width: 50%;
+}
+
+.gender-table-img,
+.gender-table-text {
+    width: 100%;
+}
+
 .gender-table-text {
     color: #ffffff;
     text-align: center;
@@ -502,8 +533,59 @@ h3.thermometer-news {
 
 /* ---- About ---- */
 
+.center {
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.about-img {
+    width: 172px;
+    margin: 0 auto 1rem auto;
+}
+
+.about-contact-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #F1F1F1;
+    padding: 2.5rem 1.5rem;
+}
+
+.about-contact-1,
+.about-contact-2,
+.about-contact-3 {
+    width: 100%;
+}
+
+.about-contact-1 {
+    font: 1.5rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #4f4f4f;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+.about-contact-2 {
+    padding-bottom: 1rem;
+}
+
+.about-contact-2 p,
+.about-contact-3 p {
+    margin: .5rem 0;
+}
+
+.about-contact-2 p:first-of-type,
+.about-contact-3 p {
+    font-weight: 600;
+}
 
 /* ---- Other Surveys ---- */
+
+.section-links h2 {
+    text-align: center;
+    margin: 1rem;
+}
 
 
 /* ---- Sign Up Form ---- */
@@ -814,6 +896,10 @@ h3.thermometer-news {
         align-items: center;
     }
 
+    .gender-col-flex-left {
+        flex-flow: row-reverse nowrap;  
+    }
+
     .gender-col-flex-right {
         background: #949494;
     }
@@ -823,12 +909,31 @@ h3.thermometer-news {
         text-align: left;
         margin-bottom: 0;
     }
+
+    .gender-table-img,
+    .gender-table-text {
+    width: 50%;
+}
+}
 }
 
 /* ---- Implications ---- */
 
 
 /* ---- About ---- */
+
+@media screen and (min-width: 620px) {
+    
+    .about-contact-1 {
+        text-align: center;
+    }
+
+    .about-contact-2,
+    .about-contact-3 {
+        width: 50%;
+        max-width: 280px;
+    }
+}
 
 
 /* ---- Other Surveys ---- */
