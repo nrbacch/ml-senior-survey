@@ -399,7 +399,16 @@ h3.thermometer-news {
 }
 
 .newspaper-stats-legend-img {
-    max-width: 215px;
+    width: 120px;
+    height: 102px;
+}
+
+@supports (display: flex) {
+    .newspaper-stats-legend-img {
+        width: 100%;
+        height: auto;
+        max-width: 215px;
+    } 
 }
 
 .newspaper-stats-legend {
@@ -828,6 +837,19 @@ h3.thermometer-news {
         padding: 15px 0;
         margin: 0;
     }
+
+    .newspaper-stats-legend-img {
+        width: 205px;
+        height: 175px;
+    }
+    
+    @supports (display: flex) {
+        .newspaper-stats-legend-img {
+            width: 100%;
+            height: auto;
+            max-width: 215px;
+        } 
+    }
 }
 
 @media screen and (min-width: 672px) {
@@ -843,6 +865,19 @@ h3.thermometer-news {
 }
 
 @media screen and (min-width: 768px) {
+    .newspaper-stats-legend-img {
+        width: 214px;
+        height: 183px;
+    }
+    
+    @supports (display: flex) {
+        .newspaper-stats-legend-img {
+            width: 100%;
+            height: auto;
+            max-width: 215px;
+        } 
+    }
+    
     .newspaper-stats-left p,
     .newspaper-stats-right p {
         font: 4.0625rem/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
