@@ -280,6 +280,8 @@ ul.floating-sidebar li a img:first-child {
 .trend-img-medium,
 .trend-img-small {
     width: 25%;
+    height: auto;
+    margin: 0 auto;
 }
 
 em.italic {
@@ -636,10 +638,14 @@ h3.thermometer-news {
 
     .trend-img-medium {
         width: 30%;
+        height: auto;
+        margin: 0 auto;
     }
 
     .trend-img-small {
         width: 15%;
+        height: auto;
+        margin: 0 auto;
     }
 }
 
