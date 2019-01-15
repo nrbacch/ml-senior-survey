@@ -196,6 +196,7 @@ a.grey-link {
 }
 
 .main-content {
+    width: 100%;
     max-width: 980px;
     align-self: flex-start; 
 }
@@ -777,6 +778,7 @@ h3.thermometer-news {
     .car-radio-text {
         margin: -8rem 0 6rem auto;
     }
+}
 
 @media screen and (min-width: 1200px) {
     .car-radio-text {
@@ -912,9 +914,8 @@ h3.thermometer-news {
 
     .gender-table-img,
     .gender-table-text {
-    width: 50%;
-}
-}
+        width: 50%;
+    }
 }
 
 /* ---- Implications ---- */
